@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <script src="{{ asset('admin/jquery/jquery.min.js') }}"></script>
     <link href="{{ asset('admin/bootstrape5/bootstrap.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('admin/fontawsome5/all.min.css') }}">
+    <link href="{{ asset('admin/fontawsome5/all.min.css') }}" rel="stylesheet" >
+
+    <script src="{{ asset('admin/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('admin/iconify/iconify.min.js') }}"></script>
+
     <script src="{{ asset('js/customjs.js') }}"></script>
+    <link  href="{{ asset('css/customStyle.css') }}" rel="stylesheet">
+
 </head>
 
     <title>Welcome</title>
