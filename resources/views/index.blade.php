@@ -1,11 +1,9 @@
-@extends('admin.includes.app')
+@extends('includes.app')
 @section('content')
 
 <div class="container">
     <div class="row">
-
-       <p> hello</p>
-
+    <p> hello frontend  </p>
 
     </div>
 </div>
