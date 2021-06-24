@@ -4,4 +4,8 @@
 
 <p> hello this is admin</p>
 
+
+<script>
+    alert()
+</script>
 @endsection
