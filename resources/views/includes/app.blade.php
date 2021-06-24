@@ -1,29 +1,37 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="{{ asset('bootstrape5/bootstrap.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <script src="{{ asset('jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('iconify/iconify.min.js') }}"></script>
-
-    <script src="{{ asset('js/customjs.js') }}"></script>
-    <link href="{{ asset('css/customStyle.css') }}" rel="stylesheet">
-
-    <title> home page </title>
-</head>
-<body>
+        <title>{{ config('app.name', 'LearnEdu') }}</title>
 
 
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script defer src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/price.css') }}" />
 
-    @yield('content')
 
+        @yield('customCSS')
 
+    </head>
+    <body >
 
-</body>
+        @yield('content')
+
+ 
+        @include('includes.footer')
+        <!-- all script tags here -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="{{ asset('js/jquery-3.5.1.min.js') }}"></script>
+        <script src="{{ asset('js/popper.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/custom.js') }}"></script>
+        @yield('customjs')
+
+    </body>
 </html>

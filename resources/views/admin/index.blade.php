@@ -1,7 +1,7 @@
-@extends('admin.includes.app')
+@extends('admin.layouts.app')
 
 @section('content')
 
-helllo admin
+<p> hello this is admin</p>
 
 @endsection

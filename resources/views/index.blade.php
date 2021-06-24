@@ -1,10 +1,15 @@
 @extends('includes.app')
+
 @section('content')
+
 
 <div class="container">
     <div class="row">
-    <p> hello frontend  </p>
-
+         hello frontend
     </div>
 </div>
+
+<script>
+     alert()
+</script>
 @endsection
